@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background: #285956;
+  padding: 20px;
+}
+
+.mary {
+  font-family: Arial, Helvetica, sans-serif;
+  background: black;
+  border-radius: 10px;
+  width: 100%;
+  height: 200%;
+  display: flex;
+  padding: 40px;
+  margin: 0;
+}
+
+.face-one {
+  color: black;
+  width: 50%;
+  padding: 20px;
+  border-bottom: 20px;
+  margin-left: 0;
+}
+
+.enter {
+  color: #ffffff;
+  font-size: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+input {
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #f0e9e9;
+  color: white;
+  width: 400px;
+}
+
+input::placeholder {
+  color: #503232;
+}
+
+.forget {
+  margin-left: 300px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.forget a {
+  color: white;
+}
+
+button {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #43b27f;
+  color: white;
+  width: 410px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45b56e;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-right: 222px;
+  margin-top: 20px;
+}
+
+.icon i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 24px;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.icon i:hover {
+  background-color: #555;
+}
+
+.google-icon {
+  color: #db4437;
+}
+
+.github-icon {
+  color: black;
+}
+
+.facebook-icon {
+  color: blue;
+}
+
+.create-account {
+  margin-left: 300px;
+  margin-top: 20px;
+}
+
+.create-account a {
+  color: white;
+  font-size: 12px;
+}
+
+.face-two {
+  width: 50%;
+  background: #43b27f;
+  color: #ffffff;
+  padding: 40px;
+  text-transform: capitalize;
+  border-radius: 20px;
+  clip-path: polygon(0% 15%, 0 0, 15% 0, 90% 0%, 90% 5%, 100% 5%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.first h1 {
+  font-size: 49px;
+  margin-bottom: 30px;
+}
+
+.first p {
+  font-size: 19px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.first h2 {
+  font-size: 18px;
+}
+
+span {
+  display: block;
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.k {
+  display: flex;
+  align-items: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.left-icon {
+  color: rgb(37, 172, 131);
+  background: white;
+  width: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.right-icon {
+  color: rgb(37, 172, 131);
+  background: black;
+  border-radius: 5px;
+  width: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cta {
+  background-color: #fff;
+  color: #333;
+  padding: 50px;
+  border-radius: 20px;
+  clip-path: polygon(0% 15%, 0 0, 15% 0, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+  overflow: hidden;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.cta p {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: black;
+  text-align: start;
+  margin-left: 13px;
+}
+
+.cta small {
+  font-size: 20px;
+  color: black;
+  text-align: start;
+  margin-left: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+  .mary {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .face-one, .face-two {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .enter {
+    font-size: 14px;
+  }
+
+  input, button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .forget, .create-account {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .icon {
+    margin-right: 0;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .face-two {
+    clip-path: none;
+    border-radius: 0;
+  }
+
+  .first h1 {
+    font-size: 24px;
+  }
+
+  .first p {
+    font-size: 16px;
+  }
+
+  .first h2 {
+    font-size: 14px;
+  }
+
+  .cta p {
+    font-size: 24px;
+  }
+
+  .cta small {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+  .mary {
+    flex-direction: row;
+    height: auto;
+    padding: 20px;
+  }
+
+  .face-one, .face-two {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .icon {
+    margin-right: 0;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .face-two {
+    clip-path: polygon(0% 10%, 0 0, 10% 0, 90% 0%, 90% 10%, 100% 10%, 100% 90%, 100% 100%, 90% 100%, 10% 100%, 0 100%, 0% 90%);
+  }
+}
+ 
